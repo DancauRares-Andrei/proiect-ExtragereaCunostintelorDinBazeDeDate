@@ -8,20 +8,19 @@ produse_collection = db['produse']
 clienti_collection = db['clienti']
 comenzi_collection = db['comenzi']
 
-print("Produse cu pretul mai mic de 2000 care au stocul mai mare ca 10 pentru care se afiseaza numele si pretul, sortate descrescatoare dupa pret")
 produse_gasite = produse_collection.find(
     {"pret": {"$lt": 2000}, "stoc": {"$gt": 10}},
     {"nume": 1, "pret": 1, "_id": 0}
 ).sort({"pret":-1})
 
+print("Produse cu pretul mai mic de 2000 care au stocul mai mare ca 10 pentru care se afiseaza numele si pretul, sortate descrescator dupa pret:")
 for produs in produse_gasite:
     print(produs)
 
-# Cautare clienti cu numele inceput cu litera "J"
 clienti_gasiti = clienti_collection.find(
-    {"nume": {"$regex": "^J"}}
+    {"nume": {"$regex": "^M"}}
 )
-
+print("Clienti al caror nume incepe cu M:")
 for client in clienti_gasiti:
     print(client)
 
@@ -30,11 +29,29 @@ comenzi_gasite = comenzi_collection.find(
     {"adresa_livrare": 1, "data_comanda": 1, "_id": 0}
 )
 
+print("Cautare comenzi din judetul Cluj, afisand doar adresa de livrare si data comenzii")
+
 for comanda in comenzi_gasite:
     print(comanda)
 
-comenzi_paginate = comenzi_collection.find().skip(2).limit(2)
-
+comenzi_paginate = comenzi_collection.find().skip(2).limit(2).sort({"adresa_livrare.strada":-1})
+print("Afisare comenzi paginata, cu cate 2 comenzi pe pagina, pagina a doua, sortate descrescator dupa numele strazii adresei de livrare")
 for comanda in comenzi_paginate:
     print(comanda)
 
+produse_paginate = produse_collection.find({"pret": {"$gt": 1000}},{"_id":0,"nume":1,"stoc":1}).skip(3).limit(3)
+print("Afisare paginata produse cu pretul mai mare de 1000 cu proiectie, cu cate 3 produse pe pagina, pagina a doua")
+for produs in produse_paginate:
+    print(produs)
+
+clienti_gasiti = clienti_collection.find(
+    {"inexistent": "a"} 
+)
+print("Clienti care au valoarea a pe un atribut inexistent(ar trebui sa nu existe):")
+for client in clienti_gasiti:
+    print(client)
+    
+comenzi_gasite = comenzi_collection.find({"data_comanda":None})
+print("Comenzi care au valoarea null pe data_comanda(ar trebui sa nu existe):")
+for comanda in comenzi_gasite:
+    print(comanda)
