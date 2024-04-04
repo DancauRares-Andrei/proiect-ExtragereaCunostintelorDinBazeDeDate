@@ -396,50 +396,62 @@ clienti_collection.insert_many(clienti)
 comenzi = [
     {
     "_id": ObjectId("6347f1eefb7a4e60a2e0525d"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e0525d"),
+    "email_client":"jane.smith@example.com",
     "produse": [
       {
-        "id_produs": ObjectId("6247f1eefb7a4e60a2e0525e"),
+        "nume_produs":"IdeaPad Gaming 3",
         "cantitate": 2
-      }
+      },
+      {
+        "nume_produs":"Motorola Moto E22",
+        "cantitate": 3
+      },
     ],
-    "data_comanda": "2024-03-29T12:00:00Z",
+    "data_comanda": datetime(2024,3,2,12,35,57),
     "adresa_livrare": {
-      "strada": "Str. Libertatii",
+      "strada": "Str. Florilor",
       "oras": "Cluj-Napoca",
       "judet": "Cluj",
       "cod_postal": "400000"
     },
-    "status": "În așteptare"
+    "status": "Livrată"
   },
   {
     "_id": ObjectId("6347f1eefb7a4e60a2e0525e"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e0525e"),
+    "email_client": "alex.brown@example.com",
     "produse": [
       {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525d"),
+        "nume_produs": "IdeaPad Gaming 3",
         "cantitate": 3
+      },
+      {
+        "nume_produs": "Motorola Moto E22",
+        "cantitate": 5
       }
     ],
-    "data_comanda": "2024-03-29T12:15:00Z",
+    "data_comanda": datetime(2024,3,3,14,53,17),
     "adresa_livrare": {
-      "strada": "Str. Revolutiei",
-      "oras": "Timisoara",
-      "judet": "Timis",
-      "cod_postal": "300000"
+      "strada": "Str. Libertatii",
+      "oras": "Iasi",
+      "judet": "Iasi",
+      "cod_postal": "700000"
     },
-    "status": "Onorată"
+    "status": "Livrată"
   },
   {
     "_id": ObjectId("6347f1eefb7a4e60a2e0525f"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e0525f"),
+    "email_client": "maria.garcia@example.com",
     "produse": [
       {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525f"),
+        "nume_produs": "Laptop Gaming ASUS TUF A15 FA506NC",
         "cantitate": 1
+      },
+      {
+        "nume_produs": "Apple iPhone 13",
+        "cantitate": 2
       }
     ],
-    "data_comanda": "2024-03-29T12:30:00Z",
+    "data_comanda": datetime(2024,3,4,11,30,10),
     "adresa_livrare": {
       "strada": "Str. Independentei",
       "oras": "Timisoara",
@@ -450,58 +462,62 @@ comenzi = [
   },
   {
     "_id": ObjectId("6347f1eefb7a4e60a2e05260"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05260"),
+    "email_client": "jane.smith@example.com",
     "produse": [
       {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525e"),
+        "nume_produs": "Laptop Gaming ASUS TUF A15 FA506NC",
         "cantitate": 1
       },
       {
-        "id_produs": ObjectId("6247f1eefb7a4e60a2e0525d"),
-        "cantitate": 2
+        "id_produs": "Apple iPhone 13",
+        "cantitate": 3
       }
     ],
-    "data_comanda": "2024-03-29T12:45:00Z",
+    "data_comanda": datetime(2024,3,5,9,25,42),
     "adresa_livrare": {
-      "strada": "Str. Florilor",
+      "strada": "Str. Revolutiei",
       "oras": "Cluj-Napoca",
       "judet": "Cluj",
-      "cod_postal": "400000"
+      "cod_postal": "400200"
     },
-    "status": "În așteptare"
+    "status": "Livrată"
   },
   {
     "_id": ObjectId("6347f1eefb7a4e60a2e05261"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05261"),
+    "email_client": "alex.brown@example.com",
     "produse": [
       {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525f"),
+        "nume_produs": "Samsung Galaxy A04s",
         "cantitate": 2
       },
       {
-        "id_produs": ObjectId("6247f1eefb7a4e60a2e05260"),
+        "nume_produs": "Laptop Lenovo V15 G4 IRU",
         "cantitate": 1
       }
     ],
-    "data_comanda": "2024-03-29T13:00:00Z",
+    "data_comanda": datetime(2024,3,7,15,35,32),
     "adresa_livrare": {
       "strada": "Str. Independentei",
-      "oras": "Timisoara",
-      "judet": "Timis",
-      "cod_postal": "300000"
+      "oras": "Iasi",
+      "judet": "Iasi",
+      "cod_postal": "700030"
     },
     "status": "În așteptare"
   },
   {
     "_id": ObjectId("6347f1eefb7a4e60a2e05262"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05262"),
+    "email_client": "michael.johnson@example.com",
     "produse": [
       {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525e"),
+        "nume_produs": "Samsung Galaxy A04s",
+        "cantitate": 3
+      },
+      {
+        "id_produs": "Laptop Lenovo V15 G4 IRU",
         "cantitate": 3
       }
     ],
-    "data_comanda": "2024-03-29T13:15:00Z",
+    "data_comanda": datetime(2024,3,17,12,3,15),
     "adresa_livrare": {
       "strada": "Str. Revolutiei",
       "oras": "Constanta",
@@ -512,18 +528,14 @@ comenzi = [
   },
   {
     "_id": ObjectId("6347f1eefb7a4e60a2e05263"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05263"),
+    "email_client": "maria.garcia@example.com",
     "produse": [
       {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525d"),
-        "cantitate": 1
-      },
-      {
-        "id_produs": ObjectId("6247f1eefb7a4e60a2e0525e"),
+        "nume_produs": "Laptop ACEMAGIC",
         "cantitate": 1
       }
     ],
-    "data_comanda": "2024-03-29T13:30:00Z",
+    "data_comanda": datetime(2024,3,19,16,37,24),
     "adresa_livrare": {
       "strada": "Str. Libertatii",
       "oras": "Cluj-Napoca",
@@ -534,14 +546,14 @@ comenzi = [
   },
   {
     "_id": ObjectId("6347f1eefb7a4e60a2e05264"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05264"),
+    "email_client": "alex.brown@example.com",
     "produse": [
       {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525f"),
+        "nume_produs": "Xiaomi Redmi Note 13 Pro+",
         "cantitate": 2
       }
     ],
-    "data_comanda": "2024-03-29T13:45:00Z",
+    "data_comanda": datetime(2024,3,22,13,40,12),
     "adresa_livrare": {
       "strada": "Str. Florilor",
       "oras": "Cluj-Napoca",
@@ -552,20 +564,20 @@ comenzi = [
   },
   {
     "_id": ObjectId("6347f1eefb7a4e60a2e05265"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05265"),
+    "email_client": "michael.johnson@example.com",
     "produse": [
       {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525d"),
+        "nume_produs": "Laptop ACEMAGIC",
         "cantitate": 2
       },
       {
-        "id_produs": ObjectId("6247f1eefb7a4e60a2e0525e"),
-        "cantitate": 3
+        "nume_produs": "Xiaomi Redmi Note 13 Pro+",
+        "cantitate": 1
       }
     ],
-    "data_comanda": "2024-03-29T14:00:00Z",
+    "data_comanda": datetime(2024,3,23,10,15,31),
     "adresa_livrare": {
-      "strada": "Str. Revolutiei",
+      "strada": "Str. Independentei",
       "oras": "Timisoara",
       "judet": "Timis",
       "cod_postal": "300000"
@@ -574,18 +586,18 @@ comenzi = [
   },
   {
     "_id": ObjectId("6347f1eefb7a4e60a2e05266"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05266"),
+    "email_client": "maria.garcia@example.com",
     "produse": [
       {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525e"),
-        "cantitate": 1
+        "nume_produs": "Laptop Gaming ASUS TUF A15 FA506NC",
+        "cantitate": 2
       },
       {
-        "id_produs": ObjectId("6247f1eefb7a4e60a2e0525f"),
+        "nume_produs": "Apple iPhone 13",
         "cantitate": 1
       }
     ],
-    "data_comanda": "2024-03-29T14:15:00Z",
+    "data_comanda": datetime(2024,3,31,15,35,32),
     "adresa_livrare": {
       "strada": "Str. Independentei",
       "oras": "Timisoara",
@@ -594,218 +606,36 @@ comenzi = [
     },
     "status": "În așteptare"
   },
-      {
-    "_id": ObjectId("6348f1eefb7a4e60a2e0524d"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e0525d"),
+  {
+    "_id": ObjectId("6347f1eefb7a4e60a2e0526f"),
+    "email_client": "alex.brown@example.com",
     "produse": [
       {
-        "id_produs": ObjectId("6247f1eefb7a4e60a2e0525e"),
+        "nume_produs": "Apple iPhone 13",
         "cantitate": 2
       }
     ],
-    "data_comanda": "2024-03-29T12:00:00Z",
-    "adresa_livrare": {
-      "strada": "Str. Libertatii",
-      "oras": "Cluj-Napoca",
-      "judet": "Cluj",
-      "cod_postal": "400000"
-    },
-    "status": "În așteptare"
-  },
-  {
-    "_id": ObjectId("6348f1eefb7a4e60a2e0525e"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e0525e"),
-    "produse": [
-      {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525d"),
-        "cantitate": 3
-      }
-    ],
-    "data_comanda": "2024-03-29T12:15:00Z",
-    "adresa_livrare": {
-      "strada": "Str. Revolutiei",
-      "oras": "Timisoara",
-      "judet": "Timis",
-      "cod_postal": "300000"
-    },
-    "status": "Onorată"
-  },
-  {
-    "_id": ObjectId("6348f1eefb7a4e60a2e0525f"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e0525f"),
-    "produse": [
-      {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525f"),
-        "cantitate": 1
-      }
-    ],
-    "data_comanda": "2024-03-29T12:30:00Z",
-    "adresa_livrare": {
-      "strada": "Str. Independentei",
-      "oras": "Timisoara",
-      "judet": "Timis",
-      "cod_postal": "300000"
-    },
-    "status": "Anulată"
-  },
-  {
-    "_id": ObjectId("6348f1eefb7a4e60a2e05260"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05260"),
-    "produse": [
-      {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525e"),
-        "cantitate": 1
-      },
-      {
-        "id_produs": ObjectId("6247f1eefb7a4e60a2e0525d"),
-        "cantitate": 2
-      }
-    ],
-    "data_comanda": "2024-03-29T12:45:00Z",
+    "data_comanda": datetime(2024,4,1,12,20,12),
     "adresa_livrare": {
       "strada": "Str. Florilor",
       "oras": "Cluj-Napoca",
       "judet": "Cluj",
       "cod_postal": "400000"
-    },
-    "status": "În așteptare"
-  },
-  {
-    "_id": ObjectId("6348f1eefb7a4e60a2e05261"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05261"),
-    "produse": [
-      {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525f"),
-        "cantitate": 2
-      },
-      {
-        "id_produs": ObjectId("6247f1eefb7a4e60a2e05260"),
-        "cantitate": 1
-      }
-    ],
-    "data_comanda": "2024-03-29T13:00:00Z",
-    "adresa_livrare": {
-      "strada": "Str. Independentei",
-      "oras": "Timisoara",
-      "judet": "Timis",
-      "cod_postal": "300000"
-    },
-    "status": "În așteptare"
-  },
-  {
-    "_id": ObjectId("6348f1eefb7a4e60a2e05262"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05262"),
-    "produse": [
-      {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525e"),
-        "cantitate": 3
-      }
-    ],
-    "data_comanda": "2024-03-29T13:15:00Z",
-    "adresa_livrare": {
-      "strada": "Str. Revolutiei",
-      "oras": "Constanta",
-      "judet": "Constanta",
-      "cod_postal": "900000"
-    },
-    "status": "În așteptare"
-  },
-  {
-    "_id": ObjectId("6348f1eefb7a4e60a2e05263"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05263"),
-    "produse": [
-      {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525d"),
-        "cantitate": 1
-      },
-      {
-        "id_produs": ObjectId("6247f1eefb7a4e60a2e0525e"),
-        "cantitate": 1
-      }
-    ],
-    "data_comanda": "2024-03-29T13:30:00Z",
-    "adresa_livrare": {
-      "strada": "Str. Libertatii",
-      "oras": "Cluj-Napoca",
-      "judet": "Cluj",
-      "cod_postal": "400000"
-    },
-    "status": "În așteptare"
-  },
-  {
-    "_id": ObjectId("6348f1eefb7a4e60a2e05264"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05264"),
-    "produse": [
-      {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525f"),
-        "cantitate": 2
-      }
-    ],
-    "data_comanda": "2024-03-29T13:45:00Z",
-    "adresa_livrare": {
-      "strada": "Str. Florilor",
-      "oras": "Cluj-Napoca",
-      "judet": "Cluj",
-      "cod_postal": "400000"
-    },
-    "status": "În așteptare"
-  },
-  {
-    "_id": ObjectId("6348f1eefb7a4e60a2e05265"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05265"),
-    "produse": [
-      {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525d"),
-        "cantitate": 2
-      },
-      {
-        "id_produs": ObjectId("6247f1eefb7a4e60a2e0525e"),
-        "cantitate": 3
-      }
-    ],
-    "data_comanda": "2024-03-29T14:00:00Z",
-    "adresa_livrare": {
-      "strada": "Str. Revolutiei",
-      "oras": "Timisoara",
-      "judet": "Timis",
-      "cod_postal": "300000"
-    },
-    "status": "În așteptare"
-  },
-  {
-    "_id": ObjectId("6348f1eefb7a4e60a2e05266"),
-    "id_client": ObjectId("6247f1eefb7a4e60a2e05266"),
-    "produse": [
-      {
-        "id_produs": ObjectId("6147f1eefb7a4e60a2e0525e"),
-        "cantitate": 1
-      },
-      {
-        "id_produs": ObjectId("6247f1eefb7a4e60a2e0525f"),
-        "cantitate": 1
-      }
-    ],
-    "data_comanda": "2024-03-29T14:15:00Z",
-    "adresa_livrare": {
-      "strada": "Str. Independentei",
-      "oras": "Timisoara",
-      "judet": "Timis",
-      "cod_postal": "300000"
     },
     "status": "În așteptare"
   }
 ]
 comenzi_collection.insert_many(comenzi)
 
-produse_collection.update_one({ 'nume': 'Laptop Dell' }, { '$set': { 'stoc': 45 } })
+produse_collection.update_one({ 'pret': 3399.99 }, { '$set': { 'stoc': 45 } })
 clienti_collection.update_one({ 'nume': 'Jane' }, { '$set': { 'telefon': "987651234" } })
-comenzi_collection.update_one({ 'status': 'În așteptare' }, { '$set': { 'status': "Onorată" } })
+comenzi_collection.update_one({ 'status': 'În așteptare' }, { '$set': { 'status': "Livrată" } })
 
 produse_collection.delete_one({ 'descriere':"Atinge apogeul jocurilor cu modelul 2023 Strix SCAR 17, cu un procesor AMD pana la Ryzen™ 9 7945HX si o placa grafica pana la NVIDIA® GeForce RTX™ 4090 Laptop GPU."})
 clienti_collection.delete_one({ 'nume': 'John', 'prenume': 'Doe' })
-comenzi_collection.delete_one({ "_id": ObjectId("6348f1eefb7a4e60a2e05266"), "status": "În așteptare" })#De facut dupa atribute
+comenzi_collection.delete_one({ "email_client": "alex.brown@example.com", "status": "În așteptare", "data_comanda": datetime(2024,4,1,12,20,12) })
 
 produse_collection.update_one({"nume": "Xiaomi Redmi Note 13 Pro+", "comentarii.utilizator": "alex_brown"},{"$set": {"comentarii.$.comentariu": "Comentariu actualizat"}})
 clienti_collection.update_one({"email":"michael.johnson@example.com"}, {"$set": {"adresa.judet": "Bacău"}})
-comenzi_collection.update_one({"_id": ObjectId("6348f1eefb7a4e60a2e05265")},{"$set": {"adresa_livrare.oras": "Bacău"}})#De facut dupa atribute
+comenzi_collection.update_one({"email_client":"maria.garcia@example.com","data_comanda": datetime(2024,3,31,15,35,32)},{"$set": {"adresa_livrare.oras": "Bacău"}})
 
