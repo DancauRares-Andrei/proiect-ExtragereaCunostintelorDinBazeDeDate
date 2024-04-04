@@ -42,7 +42,7 @@ produse = [
   "comentarii": [
     {
       "utilizator": "jane_smith",
-      "comentariu": "Foarte mulțumit de performanțele acestui laptop!"
+      "comentariu": "Foarte mulțumită de performanțele acestui laptop!"
     },
     {
       "utilizator": "alex_brown",
@@ -53,35 +53,33 @@ produse = [
 
     {
   "_id": ObjectId("6147f1eefb7a4e60a2e0525e"),
-  "nume": "Smartphone Samsung",
-  "descriere": "Smartphone performant cu cameră foto de înaltă calitate și ecran vibrant.",
-  "pret": 1500.0,
+  "nume": "Motorola Moto E22",
+  "descriere": "Du-ti experientele cotidiene de vizualizare si ascultare la un alt nivel, cu moto e22.",
+  "pret": 350.0,
   "stoc": 100,
   "disponibil": True,
-  "data_adaugare": datetime.utcnow(),
+  "data_adaugare": datetime(2024,1,25,12,35,57),
   "specificatii": {
-    "culoare": "Albastru",
-    "dimensiuni": {
-      "lungime": 15.2,
-      "latime": 7.1,
-      "inaltime": 0.8
+    "culoare": "Gri",
+    "procesor": {
+      "producator": "MediaTek",
+      "tip": "Hello G37",
+      "nuclee": 8
     },
-    "greutate": 0.2,
-    "marca": "Samsung",
-    "altele": ["5G", "Amoled Display", "Procesor Octa-Core"]
+    "RAM": "4 GB",
+    "marca": "Motorola",
+    "altele": ["4G", "LCD","Baterie 4020 mAh"]
   },
   "imagini": [
-    "<binary data 1>",
-    "<binary data 2>",
-    "<binary data 3>"
+    citire_imagine('MOTOE22.png'),citire_imagine('MOTOE22-2.png')
   ],
   "comentarii": [
     {
-      "utilizator": "maria_23",
+      "utilizator": "jane_smith",
       "comentariu": "Sunt încântată de calitatea ecranului și de performanțele acestui smartphone!"
     },
     {
-      "utilizator": "alex_87",
+      "utilizator": "alex_brown",
       "comentariu": "Bateria ține foarte mult, sunt foarte mulțumit de achiziție."
     }
   ]
@@ -122,36 +120,34 @@ produse = [
 
     {
   "_id": ObjectId("6147f1eefb7a4e60a2e05260"),
-  "nume": "Smartphone Samsung",
-  "descriere": "Smartphone performant cu cameră foto de înaltă calitate și ecran vibrant.",
-  "pret": 1500.0,
-  "stoc": 100,
+  "nume": "Samsung Galaxy A04s",
+  "descriere": "Extinde-ti vizualizarea la ecranul Infinity-V de 6,5 inch de pe Galaxy A04s si vezi ce ai ratat pana acum.",
+  "pret": 534.3,
+  "stoc": 150,
   "disponibil": True,
-  "data_adaugare": datetime.utcnow(),
+  "data_adaugare": datetime(2024,2,1,12,34,9),
   "specificatii": {
-    "culoare": "Albastru",
-    "dimensiuni": {
-      "lungime": 15.2,
-      "latime": 7.1,
-      "inaltime": 0.8
+    "culoare": "Negru",
+    "procesor": {
+      "producator": "Samsung",
+      "tip": "Exynos 850",
+      "nuclee": 8
     },
-    "greutate": 0.2,
+    "RAM":"3 GB",
     "marca": "Samsung",
-    "altele": ["5G", "Amoled Display", "Procesor Octa-Core"]
+    "altele": ["4G", "PLS", "Procesor Octa-Core"]
   },
   "imagini": [
-    "<binary data 1>",
-    "<binary data 2>",
-    "<binary data 3>"
+    citire_imagine('A04S.png'),citire_imagine('A04S-2.png')
   ],
   "comentarii": [
     {
-      "utilizator": "maria_23",
-      "comentariu": "Sunt încântată de calitatea ecranului și de performanțele acestui smartphone!"
+      "utilizator": "michael_johnson",
+      "comentariu": "Este un smartphone ok."
     },
     {
-      "utilizator": "alex_87",
-      "comentariu": "Bateria ține foarte mult, sunt foarte mulțumit de achiziție."
+      "utilizator": "alex_brown",
+      "comentariu": "Un cadou bun pentru fiica mea."
     }
   ]
 },
@@ -191,36 +187,34 @@ produse = [
 
     {
   "_id": ObjectId("6147f1eefb7a4e60a2e05262"),
-  "nume": "Smartphone Samsung",
-  "descriere": "Smartphone performant cu cameră foto de înaltă calitate și ecran vibrant.",
-  "pret": 1500.0,
-  "stoc": 100,
+  "nume": "Apple iPhone 13",
+  "descriere": "Ecran superstralucitor intr-un design rezistent. Filmari demne de Hollywood, mai usor de realizat ca niciodata.",
+  "pret": 3099.9,
+  "stoc": 20,
   "disponibil": True,
-  "data_adaugare": datetime.utcnow(),
+  "data_adaugare": datetime(2024,2,10,16,43,29),
   "specificatii": {
-    "culoare": "Albastru",
-    "dimensiuni": {
-      "lungime": 15.2,
-      "latime": 7.1,
-      "inaltime": 0.8
+    "culoare": "Midnight",
+    "procesor": {
+      "producator": "Apple",
+      "tip": "A15 Bionic",
+      "nuclee": 6
     },
-    "greutate": 0.2,
-    "marca": "Samsung",
-    "altele": ["5G", "Amoled Display", "Procesor Octa-Core"]
+    "RAM":"4 GB",
+    "marca": "Apple",
+    "altele": ["5G", "NFC", "iOS15"]
   },
   "imagini": [
-    "<binary data 1>",
-    "<binary data 2>",
-    "<binary data 3>"
+    citire_imagine('I13.png'),citire_imagine('I13-2.png')
   ],
   "comentarii": [
     {
-      "utilizator": "maria_23",
-      "comentariu": "Sunt încântată de calitatea ecranului și de performanțele acestui smartphone!"
+      "utilizator": "maria_garcia",
+      "comentariu": "Sunt mereu multumita de produsele acestui brand!"
     },
     {
-      "utilizator": "alex_87",
-      "comentariu": "Bateria ține foarte mult, sunt foarte mulțumit de achiziție."
+      "utilizator": "jane_smith",
+      "comentariu": "Un produs cu care ma pot mandri cunostintelor!"
     }
   ]
 },
@@ -260,34 +254,34 @@ produse = [
 
     {
   "_id": ObjectId("6147f1eefb7a4e60a2e05264"),
-  "nume": "Smartphone Samsung",
-  "descriere": "Smartphone performant cu cameră foto de înaltă calitate și ecran vibrant.",
-  "pret": 1500.0,
-  "stoc": 100,
+  "nume": "Xiaomi Redmi Note 13 Pro+",
+  "descriere": "Telefon mobil Xiaomi Redmi Note 13 Pro+, 8GB RAM, 256GB, 5G, Black",
+  "pret": 1791.9,
+  "stoc": 30,
   "disponibil": True,
-  "data_adaugare": datetime.utcnow(),
+  "data_adaugare": datetime(2024,2,14,15,45,19),
   "specificatii": {
-    "culoare": "Albastru",
-    "dimensiuni": {
-      "lungime": 15.2,
-      "latime": 7.1,
-      "inaltime": 0.8
+    "culoare": "Midnight",
+    "procesor": {
+      "producator": "MediaTek",
+      "tip": "Dimensity 7200 Ultra",
+      "nuclee": 8
     },
-    "greutate": 0.2,
-    "marca": "Samsung",
-    "altele": ["5G", "Amoled Display", "Procesor Octa-Core"]
+    "RAM":"8 GB",
+    "marca": "Xiaomi",
+    "altele": ["5G", "AMOLED 6.67 inch", "5000 mAh"]
   },
   "imagini": [
-    "in lucru"
+    citire_imagine('NOTE13.png'),citire_imagine('NOTE13-2.png')
   ],
   "comentarii": [
     {
-      "utilizator": "maria_23",
-      "comentariu": "Sunt încântată de calitatea ecranului și de performanțele acestui smartphone!"
+      "utilizator": "michael_johnson",
+      "comentariu": "Pentru un brand chinezesc, este ok."
     },
     {
-      "utilizator": "alex_87",
-      "comentariu": "Bateria ține foarte mult, sunt foarte mulțumit de achiziție."
+      "utilizator": "alex_brown",
+      "comentariu": "E ok, nu am foarte mult de zis."
     }
   ]
 },
@@ -807,11 +801,11 @@ produse_collection.update_one({ 'nume': 'Laptop Dell' }, { '$set': { 'stoc': 45 
 clienti_collection.update_one({ 'nume': 'Jane' }, { '$set': { 'telefon': "987651234" } })
 comenzi_collection.update_one({ 'status': 'În așteptare' }, { '$set': { 'status': "Onorată" } })
 
-produse_collection.delete_one({ '_id': ObjectId('6147f1eefb7a4e60a2e05268')})#De facut dupa atribute
+produse_collection.delete_one({ 'descriere':"Atinge apogeul jocurilor cu modelul 2023 Strix SCAR 17, cu un procesor AMD pana la Ryzen™ 9 7945HX si o placa grafica pana la NVIDIA® GeForce RTX™ 4090 Laptop GPU."})
 clienti_collection.delete_one({ 'nume': 'John', 'prenume': 'Doe' })
 comenzi_collection.delete_one({ "_id": ObjectId("6348f1eefb7a4e60a2e05266"), "status": "În așteptare" })#De facut dupa atribute
 
-produse_collection.update_one({"_id": ObjectId("6147f1eefb7a4e60a2e05264"), "comentarii.utilizator": "alex_87"},{"$set": {"comentarii.$.comentariu": "Comentariu actualizat"}})#De facut dupa atribute
-clienti_collection.update_one({"_id": ObjectId("6247f1eefb7a4e60a2e05261")}, {"$set": {"adresa.judet": "Bacău"}})#De facut dupa atribute
+produse_collection.update_one({"nume": "Xiaomi Redmi Note 13 Pro+", "comentarii.utilizator": "alex_brown"},{"$set": {"comentarii.$.comentariu": "Comentariu actualizat"}})
+clienti_collection.update_one({"email":"michael.johnson@example.com"}, {"$set": {"adresa.judet": "Bacău"}})
 comenzi_collection.update_one({"_id": ObjectId("6348f1eefb7a4e60a2e05265")},{"$set": {"adresa_livrare.oras": "Bacău"}})#De facut dupa atribute
 
