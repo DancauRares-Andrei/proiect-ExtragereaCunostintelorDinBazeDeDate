@@ -47,11 +47,11 @@ for produs in produse_paginate:
 clienti_gasiti = clienti_collection.find(
     {"inexistent": "a"} 
 )
-print("Clienti care au valoarea a pe un atribut inexistent(ar trebui sa nu existe):")
+print("Clienti care au valoarea a pe un atribut inexistent(nu ar trebui sa existe):")
 for client in clienti_gasiti:
     print(client)
     
 comenzi_gasite = comenzi_collection.find({"data_comanda":None})
-print("Comenzi care au valoarea null pe data_comanda(ar trebui sa nu existe):")
+print("Comenzi care au valoarea null pe data_comanda(nu ar trebui sa existe):")
 for comanda in comenzi_gasite:
     print(comanda)
