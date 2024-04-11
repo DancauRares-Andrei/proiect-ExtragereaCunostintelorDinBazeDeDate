@@ -326,8 +326,8 @@ produse_collection.insert_many(produse)
 clienti = [
   {
     "_id": ObjectId("6247f1eefb7a4e60a2e0525d"),
-    "nume": "John",
-    "prenume": "Doe",
+    "nume": "Doe",
+    "prenume": "John",
     "email": "john.doe@example.com",
     "telefon": "123456789",
     "adresa": {
@@ -339,8 +339,8 @@ clienti = [
   },
   {
     "_id": ObjectId("6247f1eefb7a4e60a2e0525e"),
-    "nume": "Jane",
-    "prenume": "Smith",
+    "nume": "Smith",
+    "prenume": "Jane",
     "email": "jane.smith@example.com",
     "telefon": "987654321",
     "adresa": {
@@ -352,8 +352,8 @@ clienti = [
   },
   {
     "_id": ObjectId("6247f1eefb7a4e60a2e0525f"),
-    "nume": "Alex",
-    "prenume": "Brown",
+    "nume": "Brown",
+    "prenume": "Alex",
     "email": "alex.brown@example.com",
     "telefon": "456789123",
     "adresa": {
@@ -365,8 +365,8 @@ clienti = [
   },
   {
     "_id": ObjectId("6247f1eefb7a4e60a2e05260"),
-    "nume": "Maria",
-    "prenume": "Garcia",
+    "nume": "Garcia",
+    "prenume": "Maria",
     "email": "maria.garcia@example.com",
     "telefon": "369258147",
     "adresa": {
@@ -378,8 +378,8 @@ clienti = [
   },
   {
     "_id": ObjectId("6247f1eefb7a4e60a2e05261"),
-    "nume": "Michael",
-    "prenume": "Johnson",
+    "nume": "Johnson",
+    "prenume": "Michael",
     "email": "michael.johnson@example.com",
     "telefon": "147258369",
     "adresa": {
@@ -628,11 +628,11 @@ comenzi = [
 comenzi_collection.insert_many(comenzi)
 
 produse_collection.update_one({ 'pret': 3399.99 }, { '$set': { 'stoc': 45 } })
-clienti_collection.update_one({ 'nume': 'Jane' }, { '$set': { 'telefon': "987651234" } })
+clienti_collection.update_one({ 'prenume': 'Jane' }, { '$set': { 'telefon': "987651234" } })
 comenzi_collection.update_one({ 'status': 'În așteptare' }, { '$set': { 'status': "Livrată" } })
 
 produse_collection.delete_one({ 'descriere':"Atinge apogeul jocurilor cu modelul 2023 Strix SCAR 17, cu un procesor AMD pana la Ryzen™ 9 7945HX si o placa grafica pana la NVIDIA® GeForce RTX™ 4090 Laptop GPU."})
-clienti_collection.delete_one({ 'nume': 'John', 'prenume': 'Doe' })
+clienti_collection.delete_one({ 'prenume': 'John', 'nume': 'Doe' })
 comenzi_collection.delete_one({ "email_client": "alex.brown@example.com", "status": "În așteptare", "data_comanda": datetime(2024,4,1,12,20,12) })
 
 produse_collection.update_one({"nume": "Xiaomi Redmi Note 13 Pro+", "comentarii.utilizator": "alex_brown"},{"$set": {"comentarii.$.comentariu": "Comentariu actualizat"}})
