@@ -56,3 +56,18 @@ pipeline_lookup_comenzi = [
 result_lookup_comenzi = comenzi_collection.aggregate(pipeline_lookup_comenzi)
 for doc in result_lookup_comenzi:
     print(doc)
+
+print()
+print("Afisare detaliile produselor pentru fiecare comanda, folosind $lookup si $push, fără imagini:")   
+pipeline_lookup_produse = [
+    {"$unwind": "$produse"}, 
+    {"$lookup": {"from": "produse", "localField": "produse.nume_produs", "foreignField": "nume", "as": "detalii_produs"}},
+    {"$unwind": "$detalii_produs"}, 
+    {"$project": {"detalii_produs.imagini": 0}}, 
+    {"$group": {"_id": "$_id", "email_client": {"$first": "$email_client"}, "detalii_produse": {"$push": "$detalii_produs"}}}  
+]
+
+result_lookup_produse = comenzi_collection.aggregate(pipeline_lookup_produse)
+for doc in result_lookup_produse:
+    print(doc)
+

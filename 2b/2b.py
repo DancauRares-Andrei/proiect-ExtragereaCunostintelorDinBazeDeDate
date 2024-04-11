@@ -30,7 +30,8 @@ produse = [
     "procesor": {
       "producator": "AMD",
       "tip": "Ryzen 5",
-      "nuclee": 6
+      "nuclee": 6,
+      "frecventaGHz": 4.5
     },
     "RAM": "16 GB",
     "marca": "Lenovo",
@@ -64,7 +65,8 @@ produse = [
     "procesor": {
       "producator": "MediaTek",
       "tip": "Hello G37",
-      "nuclee": 8
+      "nuclee": 8,
+      "frecventaGHz": 2.3
     },
     "RAM": "4 GB",
     "marca": "Motorola",
@@ -97,7 +99,8 @@ produse = [
     "procesor": {
       "producator": "AMD",
       "tip": "Ryzen 5",
-      "nuclee": 6
+      "nuclee": 6,
+      "frecventaGHz": 4.5
     },
     "RAM":"16 GB",
     "marca": "ASUS",
@@ -131,7 +134,8 @@ produse = [
     "procesor": {
       "producator": "Samsung",
       "tip": "Exynos 850",
-      "nuclee": 8
+      "nuclee": 8,
+      "frecventaGHz": 2
     },
     "RAM":"3 GB",
     "marca": "Samsung",
@@ -164,7 +168,8 @@ produse = [
     "procesor": {
       "producator": "Intel",
       "tip": "i5",
-      "nuclee": 8
+      "nuclee": 8,
+      "frecventaGHz": 4.6
     },
     "RAM": "16 GB",
     "marca": "Lenovo",
@@ -198,7 +203,8 @@ produse = [
     "procesor": {
       "producator": "Apple",
       "tip": "A15 Bionic",
-      "nuclee": 6
+      "nuclee": 6,
+      "frecventaGHz": 3.23
     },
     "RAM":"4 GB",
     "marca": "Apple",
@@ -231,7 +237,8 @@ produse = [
     "procesor": {
       "producator": "Intel",
       "tip": "Alder Lake N95",
-      "nuclee": 4
+      "nuclee": 4,
+      "frecventaGHz": 3.4
     },
     "RAM": "16 GB",
     "marca": "ACEMAGIC",
@@ -265,7 +272,8 @@ produse = [
     "procesor": {
       "producator": "MediaTek",
       "tip": "Dimensity 7200 Ultra",
-      "nuclee": 8
+      "nuclee": 8,
+      "frecventaGHz": 2.8
     },
     "RAM":"8 GB",
     "marca": "Xiaomi",
@@ -299,7 +307,8 @@ produse = [
     "procesor": {
       "producator": "AMD",
       "tip": "Ryzen 9",
-      "nuclee": 16
+      "nuclee": 16,
+      "frecventaGHz": 5.4
     },
     "RAM": "32 GB",
     "marca": "ASUS",

@@ -52,7 +52,7 @@ print("Clienti care au valoarea a pe un atribut inexistent(nu ar trebui sa exist
 for client in clienti_gasiti:
     print(client)
 print() 
-comenzi_gasite = comenzi_collection.find({"data_comanda":None})
+comenzi_gasite = comenzi_collection.find({"data_comanda":{"$type": 10}})
 print("Comenzi care au valoarea null pe data_comanda(nu ar trebui sa existe):")
 for comanda in comenzi_gasite:
     print(comanda)
