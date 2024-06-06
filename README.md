@@ -1,0 +1,1 @@
+În cadrul acestui proiect am implementat o bază de date NoSQL bazată pe MongoDB ce stochează informații despre comenzi, produse și clienți ai unui magazin de electronice. În cadrul proiectului se testează operații complexe aferente framework-ului de agregare al MongoDB.
